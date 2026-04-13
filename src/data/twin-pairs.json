@@ -1,0 +1,229 @@
+{
+  "pairTexts": {
+    "witness-vessel": {
+      "name": "Knowing who you are without the storm shaking it",
+      "twins": ["witness", "vessel"],
+      "text": "There are moments when everything you feel is enormous — and yet something in you does not move. Not because you are numb. Because you are rooted. This is identity that holds steady inside the weather of your own emotions."
+    },
+    "witness-silence": {
+      "name": "Self-recognition that needs no explanation",
+      "twins": ["witness", "silence"],
+      "text": "You know who you are today — not as a story you can tell, but as something felt. Like recognizing your own handwriting without thinking. The moment you try to articulate it, it thins. Let it stay wordless."
+    },
+    "witness-root": {
+      "name": "Being enough without being seen",
+      "twins": ["witness", "root"],
+      "text": "The deepest self-recognition is the one that does not need a witness. Right now, something in you is complete — not performing, not seeking validation, not arranging itself for anyone. Just here."
+    },
+    "witness-pause": {
+      "name": "Authority at rest",
+      "twins": ["witness", "pause"],
+      "text": "You do not need to prove your power today. Something in you already knows what it is capable of — and that knowing is so quiet it needs nothing from the world. This is strength that has no need to demonstrate itself."
+    },
+    "witness-depth": {
+      "name": "Finding yourself by going deeper, not wider",
+      "twins": ["witness", "depth"],
+      "text": "Identity today is not about expression — it is about dedication. Who are you when you give yourself completely to one thing? Not the you that others see, but the you that disappears into what matters."
+    },
+    "witness-membrane": {
+      "name": "Knowing when to open, knowing when to close",
+      "twins": ["witness", "membrane"],
+      "text": "Your self-protection is intelligent today — not a wall but a living skin that senses what to let in and what to hold at a distance. Trust that sensing. It knows you better than your rules do."
+    },
+    "witness-drift": {
+      "name": "Becoming someone new so slowly it never hurts",
+      "twins": ["witness", "drift"],
+      "text": "Something in your sense of self is shifting — but gently, without crisis. You will not notice it today. You will notice it in a year, looking back, realizing: I am not who I was, and I never decided to change."
+    },
+    "witness-vesselOfForm": {
+      "name": "The dream becoming real through you",
+      "twins": ["witness", "vesselOfForm"],
+      "text": "Something you have only imagined is ready to enter the world — and it needs your specific hands, your particular voice, your imperfect willingness. The vision is not separate from you. You are how it arrives."
+    },
+    "witness-weave": {
+      "name": "Growing without breaking",
+      "twins": ["witness", "weave"],
+      "text": "You are becoming something new, and nothing needs to be destroyed for it to happen. The old you and the new you are not enemies. They are layers — and today, another one is quietly being added."
+    },
+    "vessel-silence": {
+      "name": "Feeling without naming, understanding without thinking",
+      "twins": ["vessel", "silence"],
+      "text": "An emotion is here, and it does not need a label. There is a knowing inside the feeling itself — not a mental understanding but a bodily one. Stay with it before your mind arrives to sort it."
+    },
+    "vessel-root": {
+      "name": "Holding your own feelings without reaching for comfort",
+      "twins": ["vessel", "root"],
+      "text": "You can be with this. Whatever is moving through you right now — you have the space for it, inside yourself alone. Not because you are strong. Because you are spacious."
+    },
+    "vessel-pause": {
+      "name": "Feeling the impulse and choosing to stay still",
+      "twins": ["vessel", "pause"],
+      "text": "Something in you wants to react — to fix, to flee, to fight. But underneath the impulse there is a steadiness that can hold the charge without releasing it. The feeling does not need to become an action yet."
+    },
+    "vessel-depth": {
+      "name": "Staying with one feeling long enough to hear what it actually says",
+      "twins": ["vessel", "depth"],
+      "text": "Emotions often arrive disguised. Anger that is really grief. Restlessness that is really longing. If you stay — without interpreting, without rushing — the feeling reveals its real name."
+    },
+    "vessel-membrane": {
+      "name": "Knowing who to let into your emotional world",
+      "twins": ["vessel", "membrane"],
+      "text": "Not everyone needs access to what you feel. And not everything needs to be kept private. Right now, something in you knows exactly where that line is. It is not a decision — it is a felt sense."
+    },
+    "vessel-drift": {
+      "name": "Your emotional life is quietly changing shape",
+      "twins": ["vessel", "drift"],
+      "text": "The things that used to overwhelm you are smaller now. The things you once dismissed now move you. This is not a single event — it is a slow, ongoing maturation that you can only see from a distance."
+    },
+    "vessel-vesselOfForm": {
+      "name": "A feeling that is ready to become something real",
+      "twins": ["vessel", "vesselOfForm"],
+      "text": "Not every emotion is meant to be processed. Some are meant to be made — into a letter, a conversation, a decision, a touch. Something you feel today wants to stop being felt and start being done."
+    },
+    "vessel-weave": {
+      "name": "Letting a difficult feeling become part of you without it taking over",
+      "twins": ["vessel", "weave"],
+      "text": "Something heavy is here — and the old pattern is to either fight it or be consumed by it. But there is a third way: letting it in, giving it a place, and discovering that you are larger than any single thing you carry."
+    },
+    "silence-root": {
+      "name": "Knowing what you need without asking anyone",
+      "twins": ["silence", "root"],
+      "text": "The answer is already here. Not as advice, not as someone else's wisdom — as your own quiet knowing. You do not need to consult, research, or poll. You need to listen to what you already understand."
+    },
+    "silence-pause": {
+      "name": "Knowing exactly what to do — and waiting",
+      "twins": ["silence", "pause"],
+      "text": "The insight is clear. The action is obvious. And something wiser than your mind is saying: not yet. This is not doubt. This is precision — the knowledge that timing is part of the truth."
+    },
+    "silence-depth": {
+      "name": "An insight that needs time to ripen",
+      "twins": ["silence", "depth"],
+      "text": "You have understood something, but it is not finished understanding itself through you. If you move too quickly to apply it, you will flatten it. Let it sit. Let it deepen. It will tell you when it is ready."
+    },
+    "silence-membrane": {
+      "name": "Knowing where understanding ends",
+      "twins": ["silence", "membrane"],
+      "text": "Not everything can be known. Right now, something in you recognizes the exact edge of what your mind can reach — and instead of pushing further, it rests there. This is not ignorance. It is respect for what exceeds you."
+    },
+    "silence-drift": {
+      "name": "What you know is quietly changing",
+      "twins": ["silence", "drift"],
+      "text": "The things you were certain of are softening — not collapsing, just evolving. Beliefs that felt solid are becoming more porous. This is not confusion. It is your understanding growing up."
+    },
+    "silence-vesselOfForm": {
+      "name": "The wordless finding its way into the world",
+      "twins": ["silence", "vesselOfForm"],
+      "text": "Something you understand but cannot say is looking for a form — not words, but a gesture, a choice, a way of being. Let it come through your hands, not your mouth."
+    },
+    "silence-weave": {
+      "name": "New understanding arriving without destroying the old",
+      "twins": ["silence", "weave"],
+      "text": "A new truth is here, and it does not cancel what you knew before. Both are real. The old understanding and the new one are not contradictions — they are layers of a more complete picture."
+    },
+    "root-pause": {
+      "name": "Whole in yourself and still",
+      "twins": ["root", "pause"],
+      "text": "You are not waiting for anything right now. Not for someone to arrive, not for something to happen, not for permission to begin. You are here, complete, and the stillness is not empty — it is full."
+    },
+    "root-depth": {
+      "name": "The richness of your own company",
+      "twins": ["root", "depth"],
+      "text": "Being alone today is not a gap between connections. It is its own territory — vast, unhurried, and full of things only solitude reveals. What do you discover about yourself when no one else is in the room?"
+    },
+    "root-membrane": {
+      "name": "Choosing yourself without shutting others out",
+      "twins": ["root", "membrane"],
+      "text": "There is a difference between closing a door in fear and closing it in love. Right now, the boundary you are holding is not rejection — it is self-respect. You can be whole alone and still be open."
+    },
+    "root-drift": {
+      "name": "Your relationship with solitude is slowly changing",
+      "twins": ["root", "drift"],
+      "text": "Being alone used to mean one thing. It is beginning to mean another. What was once lonely is becoming chosen. What was once empty is becoming spacious. You are growing into your own company."
+    },
+    "root-vesselOfForm": {
+      "name": "Wholeness that creates",
+      "twins": ["root", "vesselOfForm"],
+      "text": "The most honest things you make come from this place — not from longing, not from need, but from the overflow of someone who is already full. What wants to be made from your completeness today?"
+    },
+    "root-weave": {
+      "name": "Absorbing loss without losing yourself",
+      "twins": ["root", "weave"],
+      "text": "Something or someone is no longer here, and the old pattern says you should be diminished. But you are not. The loss is real. The grief is real. And you are still whole. Both are true."
+    },
+    "pause-depth": {
+      "name": "Presence instead of action",
+      "twins": ["pause", "depth"],
+      "text": "Everything in you wants to move. But what if the most powerful thing you could do is be entirely here — with things exactly as they are, without fixing, without improving, without pushing? Deep presence is its own kind of force."
+    },
+    "pause-membrane": {
+      "name": "Intelligent waiting",
+      "twins": ["pause", "membrane"],
+      "text": "You are not passive — you are sensing. Every part of you is alert, reading the situation, feeling for the right moment. This is not hesitation. This is a hunter's patience — still on the outside, perfectly awake within."
+    },
+    "pause-drift": {
+      "name": "Your direction is changing from the inside",
+      "twins": ["pause", "drift"],
+      "text": "The impulses you follow are not the same ones you followed a year ago, but the shift happened without a decision. Something in your drive is quietly reorganizing itself. You do not need to steer it."
+    },
+    "pause-vesselOfForm": {
+      "name": "The stillness that births the right action",
+      "twins": ["pause", "vesselOfForm"],
+      "text": "When the moment comes, you will not need to decide. The action will arise from the stillness — precise, timed, inevitable. Like a wave that gathers in silence before it breaks."
+    },
+    "pause-weave": {
+      "name": "Changing the situation without force",
+      "twins": ["pause", "weave"],
+      "text": "Not every transformation requires confrontation. Something is shifting today through your presence alone — without a word spoken, without a battle fought, yet with an effect that cannot be undone."
+    },
+    "depth-membrane": {
+      "name": "Going deep without drowning",
+      "twins": ["depth", "membrane"],
+      "text": "Immersion is powerful, but it needs a boundary — a point where you surface, breathe, and remember yourself. Right now you have both: the courage to go deep and the wisdom to know when to come up."
+    },
+    "depth-drift": {
+      "name": "What you care about is slowly changing",
+      "twins": ["depth", "drift"],
+      "text": "The thing that consumed you five years ago barely registers now. Something else has taken its place — not through choice but through slow, quiet gravity. Your attention is migrating."
+    },
+    "depth-vesselOfForm": {
+      "name": "Contemplation becoming creation",
+      "twins": ["depth", "vesselOfForm"],
+      "text": "You have studied this long enough. Understood it deeply enough. Something is ready to leave the realm of thought and enter the realm of making. The study wants to become the work."
+    },
+    "depth-weave": {
+      "name": "Depth that transforms without destroying",
+      "twins": ["depth", "weave"],
+      "text": "You went in — deep into something — and you are coming out different. But not broken. Not emptied. Changed in the way that trees change: slowly, always growing, never less than they were."
+    },
+    "membrane-drift": {
+      "name": "Boundaries that evolve on their own",
+      "twins": ["membrane", "drift"],
+      "text": "The walls you built years ago are softening — not because you decided to lower them, but because you have outgrown the need for them. What once protected you now constrains you. And the shift is happening by itself."
+    },
+    "membrane-vesselOfForm": {
+      "name": "Translating between inner and outer",
+      "twins": ["membrane", "vesselOfForm"],
+      "text": "Your boundary today is not just sorting — it is translating. It takes what is raw and private inside you and finds a way to bring it outward in a form others can receive. You are the bridge."
+    },
+    "membrane-weave": {
+      "name": "Boundaries that transform through contact",
+      "twins": ["membrane", "weave"],
+      "text": "Something you encountered has fundamentally changed what you let in and what you hold out. Your edges are not the same as they were. This is not damage — it is growth. Your membrane is wiser now."
+    },
+    "drift-vesselOfForm": {
+      "name": "The slow vision taking shape",
+      "twins": ["drift", "vesselOfForm"],
+      "text": "Something you have been becoming for years is beginning to show. Not as a sudden revelation but as a gradual materialization — like a photograph developing, the image was always there, only now it is visible."
+    },
+    "drift-weave": {
+      "name": "Change so complete it has no seam",
+      "twins": ["drift", "weave"],
+      "text": "There was a before and there is an after, but you cannot find the line between them. The transformation was so gradual, so thorough, that the old and the new are woven together into something you cannot separate. You are simply — different."
+    },
+    "vesselOfForm-weave": {
+      "name": "Birth as mutual becoming",
+      "twins": ["vesselOfForm", "weave"],
+      "text": "Something new is arriving, and it is not replacing what was here — it is changing it. And what was here is changing what arrives. Neither the old nor the new will end up as they started. This is not destruction. It is co-creation. The most living kind of change there is."
+    }
+  }
+}
