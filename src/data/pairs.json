@@ -1,0 +1,227 @@
+[
+  {
+    "twin1": "Sun", "twin2": "Moon",
+    "quality": "Identity through feeling",
+    "description": "Identity that does not waver when emotions storm. Knowing who you are through feeling without losing yourself in it."
+  },
+  {
+    "twin1": "Sun", "twin2": "Mercury",
+    "quality": "Self-recognition beyond words",
+    "description": "Self-recognition that needs no explanation. Knowing who you are without being able to articulate it."
+  },
+  {
+    "twin1": "Sun", "twin2": "Venus",
+    "quality": "Being enough",
+    "description": "Self-recognition that needs no mirroring from others. The deepest form of being enough."
+  },
+  {
+    "twin1": "Sun", "twin2": "Mars",
+    "quality": "Authority without action",
+    "description": "The self resting in its own power without needing to prove it. Authority without action."
+  },
+  {
+    "twin1": "Sun", "twin2": "Jupiter",
+    "quality": "Identity through dedication",
+    "description": "Finding oneself by going deep into one thing rather than expressing broadly. Identity through dedication."
+  },
+  {
+    "twin1": "Sun", "twin2": "Saturn",
+    "quality": "Intelligent self-protection",
+    "description": "Sensing when to open and when to close. Self-protection as intelligence, not fear."
+  },
+  {
+    "twin1": "Sun", "twin2": "Uranus",
+    "quality": "Maturation without rupture",
+    "description": "Identity transforming so gradually it never feels like crisis. Maturation without rupture."
+  },
+  {
+    "twin1": "Sun", "twin2": "Neptune",
+    "quality": "Vision becoming flesh",
+    "description": "The self that can bring a dream fully into the concrete. Vision becoming flesh."
+  },
+  {
+    "twin1": "Sun", "twin2": "Pluto",
+    "quality": "Change as addition",
+    "description": "The self transforming without anything needing to die first. Change as addition, not loss."
+  },
+  {
+    "twin1": "Moon", "twin2": "Mercury",
+    "quality": "Embodied emotional wisdom",
+    "description": "Holding a feeling and understanding it without analyzing. Emotional wisdom that is bodily, not mental."
+  },
+  {
+    "twin1": "Moon", "twin2": "Venus",
+    "quality": "Emotional self-sufficiency",
+    "description": "Being with your emotions without seeking comfort from outside. Emotional self-sufficiency."
+  },
+  {
+    "twin1": "Moon", "twin2": "Mars",
+    "quality": "Readiness without reactivity",
+    "description": "Feeling the emotional impulse and choosing not to act on it. Readiness without reactivity."
+  },
+  {
+    "twin1": "Moon", "twin2": "Jupiter",
+    "quality": "Emotional patience",
+    "description": "Staying with one feeling long enough for it to reveal its true content. Emotional patience."
+  },
+  {
+    "twin1": "Moon", "twin2": "Saturn",
+    "quality": "Emotional boundary as care",
+    "description": "Knowing when to let others into your emotional world and when to keep it private. Emotional boundary as care, not rejection."
+  },
+  {
+    "twin1": "Moon", "twin2": "Uranus",
+    "quality": "Emotional maturation",
+    "description": "Emotional life gradually shifting character over years without dramatic ruptures. Maturation you only see in hindsight."
+  },
+  {
+    "twin1": "Moon", "twin2": "Neptune",
+    "quality": "Feeling becoming reality",
+    "description": "Bringing the deepest feeling into a concrete action — a letter, a touch, a decision. Feeling becoming reality."
+  },
+  {
+    "twin1": "Moon", "twin2": "Pluto",
+    "quality": "Emotional integration",
+    "description": "Letting an overwhelming emotion become part of you without it taking over. Emotional transformation without losing yourself."
+  },
+  {
+    "twin1": "Mercury", "twin2": "Venus",
+    "quality": "Intuitive self-sufficiency",
+    "description": "Direct understanding of what you need without having to ask anyone. Intuitive self-sufficiency."
+  },
+  {
+    "twin1": "Mercury", "twin2": "Mars",
+    "quality": "Knowledge that holds back",
+    "description": "Knowing exactly what must be done and still waiting. Knowledge that holds back."
+  },
+  {
+    "twin1": "Mercury", "twin2": "Jupiter",
+    "quality": "Insight with patience",
+    "description": "Understanding something before words arrive and staying with it long enough for it to ripen into something real. Insight with patience."
+  },
+  {
+    "twin1": "Mercury", "twin2": "Saturn",
+    "quality": "Limits of understanding",
+    "description": "Sensing the limits of what understanding can reach and respecting it. Knowing when knowledge must stop and something else begin."
+  },
+  {
+    "twin1": "Mercury", "twin2": "Uranus",
+    "quality": "Imperceptible knowing",
+    "description": "Understanding that shifts so slowly you do not notice the change. What you know transforms imperceptibly over time."
+  },
+  {
+    "twin1": "Mercury", "twin2": "Neptune",
+    "quality": "The unsayable finding form",
+    "description": "The unsayable finding form — not as words but as action, gesture, presence."
+  },
+  {
+    "twin1": "Mercury", "twin2": "Pluto",
+    "quality": "Knowledge absorbing the new",
+    "description": "Understanding that transforms without requiring the old worldview to collapse. Knowledge absorbing the new without rejecting the old."
+  },
+  {
+    "twin1": "Venus", "twin2": "Mars",
+    "quality": "Quiet power",
+    "description": "Being whole in yourself and knowing when to remain still. Self-sufficiency without isolation — quiet power."
+  },
+  {
+    "twin1": "Venus", "twin2": "Jupiter",
+    "quality": "Enriching solitude",
+    "description": "Immersing yourself in your own company. Being alone not as a deficit but as enrichment."
+  },
+  {
+    "twin1": "Venus", "twin2": "Saturn",
+    "quality": "Boundary as self-respect",
+    "description": "Knowing the difference between shutting others out from fear and choosing your own company from love. Boundary as self-respect."
+  },
+  {
+    "twin1": "Venus", "twin2": "Uranus",
+    "quality": "Maturing self-relationship",
+    "description": "Your relationship with being alone gradually changing character from necessity to choice. Your relationship with yourself maturing quietly."
+  },
+  {
+    "twin1": "Venus", "twin2": "Neptune",
+    "quality": "Becoming what you wait for",
+    "description": "The dream of whole relation beginning by incarnating wholeness in yourself first. Not waiting for the other but becoming what you wait for."
+  },
+  {
+    "twin1": "Venus", "twin2": "Pluto",
+    "quality": "Grief without fragmentation",
+    "description": "Integrating the loss of a relationship without losing your own wholeness. Grief that does not fragment the self."
+  },
+  {
+    "twin1": "Mars", "twin2": "Jupiter",
+    "quality": "Deep presence",
+    "description": "Withholding action and immersing in what actually is. The opposite of action: deep presence with things as they are, without fixing."
+  },
+  {
+    "twin1": "Mars", "twin2": "Saturn",
+    "quality": "Intelligent waiting",
+    "description": "Knowing when not to act and simultaneously sensing precisely what the situation requires. Responsive passivity — not slackness but intelligent waiting."
+  },
+  {
+    "twin1": "Mars", "twin2": "Uranus",
+    "quality": "Retrospective redirection",
+    "description": "Drive that gradually shifts direction from within. You discover only in retrospect that you changed course."
+  },
+  {
+    "twin1": "Mars", "twin2": "Neptune",
+    "quality": "Action arising of itself",
+    "description": "Stillness that becomes a concrete action at precisely the right moment. The opposite of impulse — action that arises of itself when the time is ripe."
+  },
+  {
+    "twin1": "Mars", "twin2": "Pluto",
+    "quality": "Force without destruction",
+    "description": "Force that transforms without destroying. Changing a situation without confrontation, without battle, yet with irrevocable effect."
+  },
+  {
+    "twin1": "Jupiter", "twin2": "Saturn",
+    "quality": "Depth with self-protection",
+    "description": "Immersion that knows its own boundaries. Going deep while sensing when to surface. Depth with self-protection."
+  },
+  {
+    "twin1": "Jupiter", "twin2": "Uranus",
+    "quality": "Shifting focus",
+    "description": "Immersion that imperceptibly shifts what you immerse yourself in. The focus you had five years ago is not the same as now, but the shift happened without decision."
+  },
+  {
+    "twin1": "Jupiter", "twin2": "Neptune",
+    "quality": "Contemplation becoming action",
+    "description": "Taking what you have immersed yourself in and making it concrete in the world. Contemplation becoming action. Study becoming the work."
+  },
+  {
+    "twin1": "Jupiter", "twin2": "Pluto",
+    "quality": "Transformative immersion",
+    "description": "Immersion that transforms you without losing what you were. You come up from the depth changed but whole."
+  },
+  {
+    "twin1": "Saturn", "twin2": "Uranus",
+    "quality": "Boundaries that evolve",
+    "description": "Boundaries that gradually shift without conscious decision. What you protected yourself from ten years ago you now let in, naturally, without drama."
+  },
+  {
+    "twin1": "Saturn", "twin2": "Neptune",
+    "quality": "The translating membrane",
+    "description": "The living boundary that translates between inner and outer. The membrane that does not merely sort but translates."
+  },
+  {
+    "twin1": "Saturn", "twin2": "Pluto",
+    "quality": "Self-transforming boundaries",
+    "description": "Boundaries that transform themselves. The membrane that fundamentally changes character through what it encounters."
+  },
+  {
+    "twin1": "Uranus", "twin2": "Neptune",
+    "quality": "The slow visionary",
+    "description": "Slow change gradually taking form. The visionary materializing over years without anyone being able to point to when it happened."
+  },
+  {
+    "twin1": "Uranus", "twin2": "Pluto",
+    "quality": "Seamless transformation",
+    "description": "Mutation and integration simultaneously. Change so slow and so thorough that there is never a rupture — only a day when you realize everything is different."
+  },
+  {
+    "twin1": "Neptune", "twin2": "Pluto",
+    "quality": "Mutual birth",
+    "description": "The formless becoming flesh and what already exists transforming to receive it. The meeting between what comes in and what makes space. Birth as mutual adaptation."
+  }
+]

@@ -1,0 +1,92 @@
+[
+  {
+    "planet": "Sun",
+    "name": "The Witness",
+    "classicalQuality": "Expansive self-expression",
+    "twinQuality": "Quiet self-recognition — identity without display",
+    "color": "#7B9EB8",
+    "colorName": "Deep, quiet silver-blue",
+    "orbitalPeriodDays": 365.25
+  },
+  {
+    "planet": "Moon",
+    "name": "The Vessel",
+    "classicalQuality": "Reactive sensitivity, attachment",
+    "twinQuality": "Emotional spaciousness — holding feeling without being consumed",
+    "color": "#D4A56A",
+    "colorName": "Warm, embodied amber",
+    "orbitalPeriodDays": 27.32
+  },
+  {
+    "planet": "Mercury",
+    "name": "The Silence",
+    "classicalQuality": "Categorization, naming, mediation",
+    "twinQuality": "Understanding before language — direct knowing without translation",
+    "color": "#2E3A5F",
+    "colorName": "Still, deep indigo",
+    "orbitalPeriodDays": 87.97
+  },
+  {
+    "planet": "Venus",
+    "name": "The Root",
+    "classicalQuality": "Relation, attraction, harmony",
+    "twinQuality": "Wholeness alone — self-sufficiency that makes true relation possible",
+    "color": "#8B7355",
+    "colorName": "Solitary earth tone",
+    "orbitalPeriodDays": 224.7
+  },
+  {
+    "planet": "Mars",
+    "name": "The Pause",
+    "classicalQuality": "Action, will, drive",
+    "twinQuality": "Strategic non-action — knowing when force serves most by holding still",
+    "color": "#2F6B6B",
+    "colorName": "Deep water — dark, still teal",
+    "orbitalPeriodDays": 687
+  },
+  {
+    "planet": "Jupiter",
+    "name": "The Depth",
+    "classicalQuality": "Expansion, meaning, belief",
+    "twinQuality": "Immersion — staying with the one thing instead of reaching for everything",
+    "color": "#C8935A",
+    "colorName": "Concentrated warm amber",
+    "orbitalPeriodDays": 4333
+  },
+  {
+    "planet": "Saturn",
+    "name": "The Membrane",
+    "classicalQuality": "Structure, boundary, limitation",
+    "twinQuality": "The living membrane — boundary that senses, responds, and negotiates",
+    "color": "#C9A088",
+    "colorName": "Living warm light — soft rose-gold",
+    "orbitalPeriodDays": 10759
+  },
+  {
+    "planet": "Uranus",
+    "name": "The Drift",
+    "classicalQuality": "Sudden change, rupture",
+    "twinQuality": "Slow mutation — change from within, almost imperceptible",
+    "color": "#B87847",
+    "colorName": "Slow ember — muted copper",
+    "orbitalPeriodDays": 30687
+  },
+  {
+    "planet": "Neptune",
+    "name": "The Vessel of Form",
+    "classicalQuality": "Dissolution, dream, transcendence",
+    "twinQuality": "Incarnation — bringing the formless fully into the concrete",
+    "color": "#C47A5A",
+    "colorName": "Dense, incarnate terra cotta",
+    "orbitalPeriodDays": 60190
+  },
+  {
+    "planet": "Pluto",
+    "name": "The Weave",
+    "classicalQuality": "Transformation through destruction",
+    "twinQuality": "Transformation through integration — what need not die to become new",
+    "color": "#8A9A5B",
+    "colorName": "Woven gold-green — moss, integration",
+    "orbitalPeriodDays": 90560
+  }
+]

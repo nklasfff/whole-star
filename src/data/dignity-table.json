@@ -1,0 +1,62 @@
+{
+  "Sun": {
+    "domicile": ["Leo"],
+    "exaltation": ["Aries"],
+    "fall": ["Libra"],
+    "exile": ["Aquarius"]
+  },
+  "Moon": {
+    "domicile": ["Cancer"],
+    "exaltation": ["Taurus"],
+    "fall": ["Scorpio"],
+    "exile": ["Capricorn"]
+  },
+  "Mercury": {
+    "domicile": ["Gemini", "Virgo"],
+    "exaltation": ["Virgo"],
+    "fall": ["Pisces"],
+    "exile": ["Sagittarius", "Pisces"]
+  },
+  "Venus": {
+    "domicile": ["Taurus", "Libra"],
+    "exaltation": ["Pisces"],
+    "fall": ["Virgo"],
+    "exile": ["Aries", "Scorpio"]
+  },
+  "Mars": {
+    "domicile": ["Aries", "Scorpio"],
+    "exaltation": ["Capricorn"],
+    "fall": ["Cancer"],
+    "exile": ["Taurus", "Libra"]
+  },
+  "Jupiter": {
+    "domicile": ["Sagittarius", "Pisces"],
+    "exaltation": ["Cancer"],
+    "fall": ["Capricorn"],
+    "exile": ["Gemini", "Virgo"]
+  },
+  "Saturn": {
+    "domicile": ["Capricorn", "Aquarius"],
+    "exaltation": ["Libra"],
+    "fall": ["Aries"],
+    "exile": ["Cancer", "Leo"]
+  },
+  "Uranus": {
+    "domicile": ["Aquarius"],
+    "exaltation": ["Scorpio"],
+    "fall": ["Taurus"],
+    "exile": ["Leo"]
+  },
+  "Neptune": {
+    "domicile": ["Pisces"],
+    "exaltation": ["Cancer"],
+    "fall": ["Capricorn"],
+    "exile": ["Virgo"]
+  },
+  "Pluto": {
+    "domicile": ["Scorpio"],
+    "exaltation": ["Leo"],
+    "fall": ["Aquarius"],
+    "exile": ["Taurus"]
+  }
+}

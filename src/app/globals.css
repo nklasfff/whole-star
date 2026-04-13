@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+:root {
+  --background: #050508;
+  --foreground: #e8e4df;
+  --muted: #6b6560;
+  --accent: #C9A088;
+  --surface: #111114;
+  --border: #1f1f24;
+
+  /* Twin colors as CSS variables */
+  --twin-sun: #7B9EB8;
+  --twin-moon: #D4A56A;
+  --twin-mercury: #2E3A5F;
+  --twin-venus: #8B7355;
+  --twin-mars: #2F6B6B;
+  --twin-jupiter: #C8935A;
+  --twin-saturn: #C9A088;
+  --twin-uranus: #B87847;
+  --twin-neptune: #C47A5A;
+  --twin-pluto: #8A9A5B;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-accent: var(--accent);
+  --color-surface: var(--surface);
+  --color-border: var(--border);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+/* Contemplative input style */
+input, select {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--foreground);
+  transition: border-color 0.3s ease;
+}
+
+input:focus, select:focus {
+  border-color: var(--accent);
+  outline: none;
+}
