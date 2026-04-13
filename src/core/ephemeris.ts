@@ -7,7 +7,7 @@
  */
 
 import SwissEph from 'swisseph-wasm';
-import type { Planet, PlanetPosition, BirthData, ZodiacSign, HouseNumber } from './types';
+import type { Planet, PlanetPosition, BirthData, ZodiacSign, HouseNumber, TransitPosition } from './types';
 import { PLANETS, ZODIAC_SIGNS } from './types';
 
 // ─── Planet ID mapping ─────────────────────────────────────────────────────────
@@ -156,6 +156,47 @@ export async function calculateAngles(
       midheaven: houseData.ascmc[1],
       cusps: Array.from(houseData.cusps),
     };
+  } finally {
+    swe.close();
+  }
+}
+
+/**
+ * Calculate current planet positions for transit analysis.
+ * No house calculation needed — just ecliptic longitude and retrograde status.
+ *
+ * @param date ISO date string: YYYY-MM-DD
+ * @param time Optional time string: HH:MM (defaults to 12:00 noon)
+ */
+export async function calculateTransitPositions(
+  date: string,
+  time: string = '12:00'
+): Promise<TransitPosition[]> {
+  const swe = new SwissEph();
+  await swe.initSwissEph();
+
+  try {
+    const [year, month, day] = date.split('-').map(Number);
+    const [hours, minutes] = time.split(':').map(Number);
+    const decimalHours = hours + minutes / 60;
+
+    const jd = swe.julday(year, month, day, decimalHours);
+    const flags = 2 | 256; // SEFLG_SWIEPH | SEFLG_SPEED
+
+    const positions: TransitPosition[] = [];
+
+    for (const planet of PLANETS) {
+      const planetId = PLANET_IDS[planet];
+      const result = swe.calc_ut(jd, planetId, flags);
+
+      const longitude = swe.degnorm(result[0]);
+      const longitudeSpeed = result[3];
+      const isRetrograde = planet !== 'Sun' && planet !== 'Moon' && longitudeSpeed < 0;
+
+      positions.push({ planet, longitude, isRetrograde });
+    }
+
+    return positions;
   } finally {
     swe.close();
   }

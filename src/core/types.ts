@@ -137,6 +137,7 @@ export interface StressComponents {
   aspects: number;
   retrograde: number;
   house: number;
+  transit: number;
 }
 
 export interface StressResult {
@@ -190,6 +191,22 @@ export interface HouseAxis {
   theme: string;
 }
 
+// ─── Transit ───────────────────────────────────────────────────────────────────
+
+/** A simplified planet position for transit calculations (no house needed) */
+export interface TransitPosition {
+  planet: Planet;
+  longitude: number;
+  isRetrograde: boolean;
+}
+
+export interface TransitAspect {
+  transitPlanet: Planet;
+  natalPlanet: Planet;
+  type: AspectType;
+  orb: number;
+}
+
 // ─── Full Chart State ──────────────────────────────────────────────────────────
 
 export interface ChartState {
@@ -199,6 +216,9 @@ export interface ChartState {
   twinStates: TwinState[];
   activePairs: ActiveTwinPair[];
   brightestTwin: TwinState;
+  transitDate?: string;
+  transitPositions?: TransitPosition[];
+  transitAspects?: TransitAspect[];
 }
 
 // ─── Daily Invitation ──────────────────────────────────────────────────────────

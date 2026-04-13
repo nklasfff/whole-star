@@ -42,9 +42,19 @@ function clamp(value: number, min: number, max: number): number {
   return Math.max(min, Math.min(max, value));
 }
 
+/**
+ * Compute stress index for a natal planet.
+ *
+ * Formula: stressIndex = clamp(dignity + aspects + retrograde + house + transit, 0, 100)
+ *
+ * @param position The natal planet position
+ * @param allAspects All detected natal aspects
+ * @param transitStress Optional transit stress adjustment (from transits.ts)
+ */
 export function computeStress(
   position: PlanetPosition,
-  allAspects: DetectedAspect[]
+  allAspects: DetectedAspect[],
+  transitStress: number = 0
 ): StressResult {
   const dignity = DIGNITY_STRESS[getDignity(position.planet, position.sign)];
   const planetAspects = getAspectsForPlanet(position.planet, allAspects);
@@ -52,8 +62,19 @@ export function computeStress(
   const retrograde = position.isRetrograde ? RETROGRADE_STRESS : 0;
   const house = HOUSE_STRESS[HOUSE_TYPE[position.house]];
 
-  const components: StressComponents = { dignity, aspects, retrograde, house };
-  const stressIndex = clamp(dignity + aspects + retrograde + house, 0, 100);
+  const components: StressComponents = {
+    dignity,
+    aspects,
+    retrograde,
+    house,
+    transit: transitStress,
+  };
+
+  const stressIndex = clamp(
+    dignity + aspects + retrograde + house + transitStress,
+    0,
+    100
+  );
 
   return {
     planet: position.planet,
