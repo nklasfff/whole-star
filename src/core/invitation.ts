@@ -2,40 +2,84 @@
  * Daily invitation logic.
  *
  * Selects the brightest Twin, resolves where it stirs in everyday life,
- * and picks a single question — not what to do, but what to notice.
+ * and picks a single invitation — not what to do, but what to notice.
  * (SYSTEM.md §8)
  */
 
 import type { Planet, TwinState, DailyInvitation, HouseNumber } from './types';
 import { getHouseAxis } from './houses';
 import invitationsData from '../data/invitations.json';
-import housesData from '../data/houses.json';
 
-interface QuestionEntry {
+// ─── Twin ID mapping ───────────────────────────────────────────────────────────
+
+type TwinId =
+  | 'witness' | 'vessel' | 'silence' | 'root' | 'pause'
+  | 'depth' | 'membrane' | 'drift' | 'vesselOfForm' | 'weave';
+
+const PLANET_TO_TWIN_ID: Record<Planet, TwinId> = {
+  Sun: 'witness',
+  Moon: 'vessel',
+  Mercury: 'silence',
+  Venus: 'root',
+  Mars: 'pause',
+  Jupiter: 'depth',
+  Saturn: 'membrane',
+  Uranus: 'drift',
+  Neptune: 'vesselOfForm',
+  Pluto: 'weave',
+};
+
+// ─── Data access ───────────────────────────────────────────────────────────────
+
+interface TwinInvitations {
+  twinName: string;
   planet: string;
-  questions: string[];
+  invitations: string[];
 }
 
-const allQuestions = invitationsData.templates as QuestionEntry[];
-const houseEntries = housesData as { house: number; opposite: number; theme: string; felt: string }[];
+const data = invitationsData as Record<string, TwinInvitations | Record<string, string>>;
+const houseDescriptions = invitationsData.houseDescriptions as Record<string, string>;
+
+function getTwinEntry(planet: Planet): TwinInvitations | undefined {
+  const id = PLANET_TO_TWIN_ID[planet];
+  const entry = data[id];
+  if (!entry || !('invitations' in entry)) return undefined;
+  return entry as TwinInvitations;
+}
+
+// ─── House axis in everyday language ───────────────────────────────────────────
+
+/**
+ * Normalize a house pair to the canonical axis key (lower-higher).
+ * e.g. house 7 + opposite 1 → "1-7"
+ */
+function axisKey(house: HouseNumber): string {
+  const opposite = house <= 6 ? house + 6 : house - 6;
+  const low = Math.min(house, opposite);
+  const high = Math.max(house, opposite);
+  return `${low}-${high}`;
+}
 
 /**
  * Get a human-readable, felt description of where the Twin stirs.
- * e.g. "this stirs in your closest relationships"
+ * Uses the houseDescriptions from invitations data.
+ * e.g. "this stirs in how you meet the world and how you meet others"
  */
 export function getHouseFelt(house: HouseNumber): string {
-  const entry = houseEntries.find(h => h.house === house);
-  return entry?.felt ?? 'this stirs somewhere you haven\'t looked';
+  const key = axisKey(house);
+  return houseDescriptions[key] ?? 'this stirs somewhere you haven\'t looked';
 }
 
+// ─── Invitation selection ──────────────────────────────────────────────────────
+
 /**
- * Select a question deterministically based on the current date.
- * Same Twin on the same day always yields the same question,
- * but different days rotate through the available questions.
+ * Select an invitation deterministically based on the current date.
+ * Same Twin on the same day always yields the same invitation,
+ * but different days rotate through the available invitations.
  */
-function selectQuestion(planet: Planet, date: Date): string {
-  const entry = allQuestions.find(t => t.planet === planet);
-  if (!entry || entry.questions.length === 0) {
+function selectInvitation(planet: Planet, date: Date): string {
+  const entry = getTwinEntry(planet);
+  if (!entry || entry.invitations.length === 0) {
     return 'What do you notice right now?';
   }
 
@@ -43,9 +87,11 @@ function selectQuestion(planet: Planet, date: Date): string {
   const dayOfYear = Math.floor(
     (date.getTime() - start.getTime()) / (1000 * 60 * 60 * 24)
   );
-  const index = dayOfYear % entry.questions.length;
-  return entry.questions[index];
+  const index = dayOfYear % entry.invitations.length;
+  return entry.invitations[index];
 }
+
+// ─── Public API ────────────────────────────────────────────────────────────────
 
 /**
  * Generate a daily invitation from the brightest Twin.
@@ -55,13 +101,13 @@ export function generateInvitation(
   date: Date = new Date()
 ): DailyInvitation {
   const axis = getHouseAxis(brightestTwin.twinHouse);
-  const question = selectQuestion(brightestTwin.planet, date);
+  const invitation = selectInvitation(brightestTwin.planet, date);
 
   return {
     twinName: brightestTwin.twinName,
     planet: brightestTwin.planet,
     intensity: brightestTwin.intensity,
     houseAxis: axis,
-    invitationText: question,
+    invitationText: invitation,
   };
 }

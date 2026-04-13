@@ -1,84 +1,130 @@
 {
-  "templates": [
-    {
-      "planet": "Sun",
-      "questions": [
-        "What would change if you trusted the knowing that needs no audience?",
-        "Where in you does identity rest quietly, without needing to be seen?",
-        "What do you already know about yourself that no one else needs to confirm?"
-      ]
-    },
-    {
-      "planet": "Moon",
-      "questions": [
-        "What emotion are you spacious enough to simply hold right now?",
-        "What feeling have you been trying to fix that might just need room?",
-        "Where does tenderness live in you today without needing to go anywhere?"
-      ]
-    },
-    {
-      "planet": "Mercury",
-      "questions": [
-        "What do you already understand that you haven't yet found words for?",
-        "What would shift if you trusted knowing before explaining?",
-        "Where does silence carry more than speech today?"
-      ]
-    },
-    {
-      "planet": "Venus",
-      "questions": [
-        "What relationship shifts when you stop needing it to complete you?",
-        "Where does your own company feel like enough today?",
-        "What becomes possible in love when you arrive already whole?"
-      ]
-    },
-    {
-      "planet": "Mars",
-      "questions": [
-        "Where does holding still serve more than pushing forward?",
-        "What action are you ready for that serves most by waiting?",
-        "What would emerge if you met this moment without forcing it?"
-      ]
-    },
-    {
-      "planet": "Jupiter",
-      "questions": [
-        "What one thing are you ready to stay with instead of reaching for everything?",
-        "What would deepen if you stopped expanding?",
-        "Where does immersion call louder than breadth today?"
-      ]
-    },
-    {
-      "planet": "Saturn",
-      "questions": [
-        "Where does your structure need to breathe today?",
-        "What boundary is ready to become a conversation instead of a wall?",
-        "What would soften if you let yourself sense before you held?"
-      ]
-    },
-    {
-      "planet": "Uranus",
-      "questions": [
-        "What has been changing in you so gradually you haven't noticed?",
-        "What would you see if you compared yourself to five years ago?",
-        "Where is slow change already underway beneath your awareness?"
-      ]
-    },
-    {
-      "planet": "Neptune",
-      "questions": [
-        "What dream is ready to become something you can touch?",
-        "What vision is asking for a body today?",
-        "Where does the formless want to arrive in your hands?"
-      ]
-    },
-    {
-      "planet": "Pluto",
-      "questions": [
-        "What are you becoming that doesn't require anything to die first?",
-        "Where does change feel like addition rather than loss?",
-        "What is weaving itself together in you, quietly, without permission?"
-      ]
-    }
-  ]
+  "witness": {
+    "twinName": "The Witness",
+    "planet": "Sun",
+    "invitations": [
+      "You already know who you are today. What happens if you stop trying to show it?",
+      "There is a version of you that does not need to perform. What does it feel like to let that one lead?",
+      "What would remain of you if you expressed nothing at all today?",
+      "You do not need to become anything right now. What is it like to simply recognize what is already here?",
+      "If no one were watching — not even you — who would you be today?",
+      "Somewhere beneath the effort, you already know. What does that knowing feel like in your body?"
+    ]
+  },
+  "vessel": {
+    "twinName": "The Vessel",
+    "planet": "Moon",
+    "invitations": [
+      "A feeling is here. What happens if you hold it without trying to change it?",
+      "You do not need to understand what you feel right now. Can you let it be here anyway?",
+      "What would it be like to give this emotion more room — not more attention, just more room?",
+      "There is a space inside you that is larger than any single feeling. Can you sense it today?",
+      "What if the feeling does not need to be solved? What if it just needs to be held?",
+      "Notice what you feel without naming it. What happens when you stay with it a few breaths longer?"
+    ]
+  },
+  "silence": {
+    "twinName": "The Silence",
+    "planet": "Mercury",
+    "invitations": [
+      "You understand something today that you cannot explain. What happens if you trust it without words?",
+      "Before the thought finishes forming — there. What did you know in that instant?",
+      "Not everything needs to be articulated. What do you understand right now that language would only reduce?",
+      "There is a knowing in you that arrives before thinking. What is it pointing toward today?",
+      "What would you do differently today if you trusted what you sense before you can name it?",
+      "The clearest understanding often has no words. What is yours saying without speaking?"
+    ]
+  },
+  "root": {
+    "twinName": "The Root",
+    "planet": "Venus",
+    "invitations": [
+      "You are not missing anything right now. What does it feel like to let that be true?",
+      "What would your day look like if you were not waiting for anyone to complete it?",
+      "There is a wholeness in you that has nothing to do with another person. Can you feel where it lives?",
+      "What if being alone today is not an absence but a presence? What becomes possible?",
+      "The need to be seen is quiet today. What do you notice when it stops speaking?",
+      "You are already whole. What would you choose differently if you truly believed that right now?"
+    ]
+  },
+  "pause": {
+    "twinName": "The Pause",
+    "planet": "Mars",
+    "invitations": [
+      "You know what to do. What happens if you wait one more moment before doing it?",
+      "Your strength is not only in what you do. What is your stillness protecting today?",
+      "What would change if the most powerful thing you did today was nothing?",
+      "There is a force in you that is gathering, not acting. What is it waiting for?",
+      "Not every impulse needs a response. Which one is asking you to hold still today?",
+      "The right moment has its own timing. What happens if you let it arrive instead of chasing it?"
+    ]
+  },
+  "depth": {
+    "twinName": "The Depth",
+    "planet": "Jupiter",
+    "invitations": [
+      "What would deepen if you stopped expanding?",
+      "You are reaching for many things. What happens if you set all of them down except one?",
+      "Somewhere there is one thing asking for your full attention. Can you hear which one it is?",
+      "Breadth is easy today. Depth is what is calling. What would you give your undivided presence to?",
+      "What have you been circling around without entering? What happens if you go in?",
+      "The richest thing available to you today is not new. It is something you already know but have not yet fully met."
+    ]
+  },
+  "membrane": {
+    "twinName": "The Membrane",
+    "planet": "Saturn",
+    "invitations": [
+      "A boundary in you is alive today — not rigid, not absent, but sensing. What is it telling you?",
+      "What would it feel like to let one thing in that you have been holding at a distance?",
+      "Your edges are intelligent. What are they responding to right now?",
+      "There is a difference between protecting yourself and closing yourself. Which one are you doing today?",
+      "Something is asking for permission to enter. Something else is asking you to say no. Can you feel both?",
+      "What would change if your boundaries could breathe — firm when needed, soft when safe?"
+    ]
+  },
+  "drift": {
+    "twinName": "The Drift",
+    "planet": "Uranus",
+    "invitations": [
+      "Something in you has been shifting for a long time. Can you feel what it is becoming?",
+      "You are not the same person you were a year ago, but the change had no single moment. What changed?",
+      "What is quietly becoming true about you that you have not yet acknowledged?",
+      "The deepest changes have no announcement. What has already changed without your permission?",
+      "There is a slow becoming happening beneath your daily life. What does it need from you today?",
+      "You do not need a breakthrough. What is already breaking through on its own?"
+    ]
+  },
+  "vesselOfForm": {
+    "twinName": "The Vessel of Form",
+    "planet": "Neptune",
+    "invitations": [
+      "A dream is asking to become real today. What is the smallest step that would give it a body?",
+      "What vision have you been carrying that is ready to land? What would it look like if it touched the ground?",
+      "The beautiful and the concrete are not enemies. What would it feel like to bring them together today?",
+      "Something formless in you wants to become something you can touch. What is it?",
+      "What would happen if you stopped imagining and started making — even imperfectly?",
+      "The world does not need your dream to be perfect. It needs it to exist. What is one way to begin?"
+    ]
+  },
+  "weave": {
+    "twinName": "The Weave",
+    "planet": "Pluto",
+    "invitations": [
+      "Something new is entering your life. What if nothing needs to be destroyed to make room for it?",
+      "You can change without losing what matters. What would that kind of transformation feel like?",
+      "What if growth today is not about letting go but about letting in?",
+      "There is something old in you and something new, and they are not enemies. What happens if they meet?",
+      "You do not need to burn it down. What would it look like to weave the new into the existing?",
+      "The most profound change is the one that leaves you more whole, not less. What is asking to be integrated today?"
+    ]
+  },
+  "houseDescriptions": {
+    "1-7": "this stirs in how you meet the world and how you meet others",
+    "2-8": "this lives in what you hold as yours and what you share at depth",
+    "3-9": "this moves between your daily conversations and your larger understanding",
+    "4-10": "this works between your most private space and your public life",
+    "5-11": "this plays between what you create and what you contribute to the larger whole",
+    "6-12": "this lives between your daily rhythms and what you surrender to"
+  }
 }
