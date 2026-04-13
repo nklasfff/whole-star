@@ -8,7 +8,7 @@
   --surface: #111114;
   --border: #1f1f24;
 
-  /* Twin colors as CSS variables */
+  /* Twin colors */
   --twin-sun: #7B9EB8;
   --twin-moon: #D4A56A;
   --twin-mercury: #2E3A5F;
@@ -28,6 +28,8 @@
   --color-accent: var(--accent);
   --color-surface: var(--surface);
   --color-border: var(--border);
+  --font-family-serif: var(--font-serif);
+  --font-family-sans: var(--font-sans);
 }
 
 body {
@@ -46,4 +48,23 @@ input, select {
 input:focus, select:focus {
   border-color: var(--accent);
   outline: none;
+}
+
+/* Page fade-in animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 600ms ease-out both;
+}
+
+/* Hide scrollbar for horizontal scroll areas */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
 }

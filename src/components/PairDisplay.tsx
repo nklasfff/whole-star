@@ -26,9 +26,7 @@ export default function PairDisplay({ pair }: PairDisplayProps) {
         <span className="text-xs font-light" style={{ color: def2?.color }}>
           {def2?.name}
         </span>
-        <span className="ml-auto text-xs tabular-nums text-[var(--muted)]">
-          {Math.round(pair.combinedIntensity)}
-        </span>
+        <span className="ml-auto" />
       </div>
 
       <p className="text-sm font-light text-[var(--foreground)] mb-1">

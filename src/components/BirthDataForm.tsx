@@ -38,7 +38,7 @@ export default function BirthDataForm({ onSubmit, isLoading }: BirthDataFormProp
   return (
     <form onSubmit={handleSubmit} className="w-full max-w-sm space-y-6">
       <div className="space-y-2">
-        <label htmlFor="date" className="block text-sm text-[var(--muted)] tracking-wide">
+        <label htmlFor="date" className="block text-sm font-serif font-light text-[var(--muted)] tracking-wide">
           Date of birth
         </label>
         <input
@@ -52,7 +52,7 @@ export default function BirthDataForm({ onSubmit, isLoading }: BirthDataFormProp
       </div>
 
       <div className="space-y-2">
-        <label htmlFor="time" className="block text-sm text-[var(--muted)] tracking-wide">
+        <label htmlFor="time" className="block text-sm font-serif font-light text-[var(--muted)] tracking-wide">
           Time of birth
         </label>
         <input
@@ -66,7 +66,7 @@ export default function BirthDataForm({ onSubmit, isLoading }: BirthDataFormProp
       </div>
 
       <div className="space-y-2">
-        <label htmlFor="city" className="block text-sm text-[var(--muted)] tracking-wide">
+        <label htmlFor="city" className="block text-sm font-serif font-light text-[var(--muted)] tracking-wide">
           Place of birth
         </label>
         <select
