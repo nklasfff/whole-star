@@ -19,6 +19,8 @@ interface TwinCanvasProps {
   twinStates: TwinState[];
   positions: PlanetPosition[];
   ascendant?: number;
+  fieldScale?: number;      // multiplier for field sizes (default 1)
+  hideChart?: boolean;       // hide classical chart background
 }
 
 /**
@@ -55,16 +57,15 @@ function layoutFields(
   });
 }
 
-function Scene({ twinStates, positions, ascendant }: TwinCanvasProps) {
+function Scene({ twinStates, positions, ascendant, fieldScale = 1, hideChart }: TwinCanvasProps) {
   const fields = useMemo(() => layoutFields(twinStates), [twinStates]);
 
   return (
     <>
-      {/* Subtle ambient light — doesn't affect shaders directly but helps any mesh materials */}
       <ambientLight intensity={0.1} />
 
-      {/* Classical chart in the background */}
-      <ClassicalChart positions={positions} ascendant={ascendant} />
+      {/* Classical chart in the background — hidden in meditation/daily mode */}
+      {!hideChart && <ClassicalChart positions={positions} ascendant={ascendant} />}
 
       {/* Twin fields — each a pulsing luminous plane with custom shader */}
       {fields.map((field) => (
@@ -73,15 +74,16 @@ function Scene({ twinStates, positions, ascendant }: TwinCanvasProps) {
           planet={field.planet}
           intensity={field.intensity}
           position={field.pos}
+          scale={fieldScale}
         />
       ))}
     </>
   );
 }
 
-export default function TwinCanvas({ twinStates, positions, ascendant }: TwinCanvasProps) {
+export default function TwinCanvas({ twinStates, positions, ascendant, fieldScale, hideChart }: TwinCanvasProps) {
   return (
-    <div className="w-full h-full min-h-[500px]">
+    <div className="w-full h-full">
       <Canvas
         camera={{ position: [0, 0, 5], fov: 50 }}
         gl={{
@@ -95,6 +97,8 @@ export default function TwinCanvas({ twinStates, positions, ascendant }: TwinCan
           twinStates={twinStates}
           positions={positions}
           ascendant={ascendant}
+          fieldScale={fieldScale}
+          hideChart={hideChart}
         />
       </Canvas>
     </div>

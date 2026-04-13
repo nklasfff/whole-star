@@ -1,4 +1,4 @@
-import { generateInvitation } from '@/core/invitation';
+import { generateInvitation, getHouseFelt } from '@/core/invitation';
 import type { TwinState } from '@/core/types';
 
 const brightestTwin: TwinState = {
@@ -14,40 +14,24 @@ describe('generateInvitation', () => {
     const inv = generateInvitation(brightestTwin);
     expect(inv.twinName).toBe('The Membrane');
     expect(inv.planet).toBe('Saturn');
-    expect(inv.intensity).toBe(78);
   });
 
-  it('resolves the correct house axis', () => {
+  it('generates a single question as invitation text', () => {
     const inv = generateInvitation(brightestTwin);
-    expect(inv.houseAxis.house).toBe(4);
-    expect(inv.houseAxis.opposite).toBe(10);
-    expect(inv.houseAxis.theme).toContain('Private');
+    expect(inv.invitationText.length).toBeGreaterThan(10);
+    expect(inv.invitationText).toContain('?');
   });
 
-  it('generates non-empty invitation text', () => {
-    const inv = generateInvitation(brightestTwin);
-    expect(inv.invitationText.length).toBeGreaterThan(20);
-  });
-
-  it('fills template placeholders with house names', () => {
-    const inv = generateInvitation(brightestTwin);
-    // Should not contain raw placeholders
-    expect(inv.invitationText).not.toContain('{twinHouse}');
-    expect(inv.invitationText).not.toContain('{planetHouse}');
-    expect(inv.invitationText).not.toContain('{twinName}');
-  });
-
-  it('selects same template for same date deterministically', () => {
+  it('selects same question for same date deterministically', () => {
     const date = new Date('2025-06-15');
     const inv1 = generateInvitation(brightestTwin, date);
     const inv2 = generateInvitation(brightestTwin, date);
     expect(inv1.invitationText).toBe(inv2.invitationText);
   });
 
-  it('may select different template for different dates', () => {
+  it('rotates questions across different dates', () => {
     const inv1 = generateInvitation(brightestTwin, new Date('2025-01-01'));
     const inv2 = generateInvitation(brightestTwin, new Date('2025-01-02'));
-    // With 2 templates, consecutive days should differ
     expect(inv1.invitationText).not.toBe(inv2.invitationText);
   });
 
@@ -67,7 +51,28 @@ describe('generateInvitation', () => {
       };
       const inv = generateInvitation(twin);
       expect(inv.invitationText.length).toBeGreaterThan(10);
-      expect(inv.planet).toBe(planet);
+      expect(inv.invitationText).toContain('?');
+    }
+  });
+});
+
+describe('getHouseFelt', () => {
+  it('returns a human-readable felt description', () => {
+    const felt = getHouseFelt(7);
+    expect(felt).toBe('this stirs in your closest relationships');
+  });
+
+  it('returns felt description for house 6', () => {
+    const felt = getHouseFelt(6);
+    expect(felt).toBe('this moves through your daily routines and rituals');
+  });
+
+  it('returns felt descriptions for all 12 houses', () => {
+    for (let h = 1; h <= 12; h++) {
+      const felt = getHouseFelt(h as 1|2|3|4|5|6|7|8|9|10|11|12);
+      expect(felt.length).toBeGreaterThan(10);
+      expect(felt).not.toContain('House');
+      expect(felt).not.toContain('\u2194');
     }
   });
 });

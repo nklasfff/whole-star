@@ -1,14 +1,14 @@
 [
-  { "house": 1, "opposite": 7, "theme": "Self \u2194 Other" },
-  { "house": 2, "opposite": 8, "theme": "Mine \u2194 Ours" },
-  { "house": 3, "opposite": 9, "theme": "Local \u2194 Universal" },
-  { "house": 4, "opposite": 10, "theme": "Private \u2194 Public" },
-  { "house": 5, "opposite": 11, "theme": "Personal expression \u2194 Collective" },
-  { "house": 6, "opposite": 12, "theme": "Doing \u2194 Releasing" },
-  { "house": 7, "opposite": 1, "theme": "Other \u2194 Self" },
-  { "house": 8, "opposite": 2, "theme": "Ours \u2194 Mine" },
-  { "house": 9, "opposite": 3, "theme": "Universal \u2194 Local" },
-  { "house": 10, "opposite": 4, "theme": "Public \u2194 Private" },
-  { "house": 11, "opposite": 5, "theme": "Collective \u2194 Personal expression" },
-  { "house": 12, "opposite": 6, "theme": "Releasing \u2194 Doing" }
+  { "house": 1, "opposite": 7, "theme": "Self \u2194 Other", "felt": "this stirs in how you show up in the world" },
+  { "house": 2, "opposite": 8, "theme": "Mine \u2194 Ours", "felt": "this lives in what you hold and what you release" },
+  { "house": 3, "opposite": 9, "theme": "Local \u2194 Universal", "felt": "this moves through your everyday conversations" },
+  { "house": 4, "opposite": 10, "theme": "Private \u2194 Public", "felt": "this stirs in your most private inner world" },
+  { "house": 5, "opposite": 11, "theme": "Personal expression \u2194 Collective", "felt": "this lives in what you create and how you play" },
+  { "house": 6, "opposite": 12, "theme": "Doing \u2194 Releasing", "felt": "this moves through your daily routines and rituals" },
+  { "house": 7, "opposite": 1, "theme": "Other \u2194 Self", "felt": "this stirs in your closest relationships" },
+  { "house": 8, "opposite": 2, "theme": "Ours \u2194 Mine", "felt": "this lives in what you share most deeply with others" },
+  { "house": 9, "opposite": 3, "theme": "Universal \u2194 Local", "felt": "this moves through your search for meaning" },
+  { "house": 10, "opposite": 4, "theme": "Public \u2194 Private", "felt": "this stirs in your work and public life" },
+  { "house": 11, "opposite": 5, "theme": "Collective \u2194 Personal expression", "felt": "this lives in your communities and friendships" },
+  { "house": 12, "opposite": 6, "theme": "Releasing \u2194 Doing", "felt": "this moves through what you cannot quite name" }
 ]

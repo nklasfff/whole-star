@@ -76,9 +76,10 @@ interface TwinFieldProps {
   planet: Planet;
   intensity: number; // 0–100
   position: [number, number, number];
+  scale?: number;    // multiplier for field size (default 1)
 }
 
-export default function TwinField({ planet, intensity, position }: TwinFieldProps) {
+export default function TwinField({ planet, intensity, position, scale = 1 }: TwinFieldProps) {
   const meshRef = useRef<THREE.Mesh>(null);
   const materialRef = useRef<THREE.ShaderMaterial>(null);
 
@@ -89,8 +90,8 @@ export default function TwinField({ planet, intensity, position }: TwinFieldProp
   // Intensity mapped to 0–1 range
   const normalizedIntensity = intensity / 100;
 
-  // Size scales with intensity: minimum 0.5, maximum 2.5
-  const size = 0.5 + normalizedIntensity * 2.0;
+  // Size scales with intensity: minimum 0.5, maximum 2.5, then apply scale
+  const size = (0.5 + normalizedIntensity * 2.0) * scale;
 
   const uniforms = useMemo(
     () => ({

@@ -1,83 +1,83 @@
 {
   "templates": [
     {
-      "twinName": "The Witness",
       "planet": "Sun",
-      "templates": [
-        "The Witness is strong today — your capacity for quiet self-recognition is heightened. It's working in your {twinHouse} house, while your {planetHouse} house calls for expression. What would change if you trusted the knowing that needs no audience?",
-        "Notice: the Witness stirs. Identity without display — not hiding, but resting in what you already know you are. Where in your {twinHouseTheme} does this recognition live today?"
+      "questions": [
+        "What would change if you trusted the knowing that needs no audience?",
+        "Where in you does identity rest quietly, without needing to be seen?",
+        "What do you already know about yourself that no one else needs to confirm?"
       ]
     },
     {
-      "twinName": "The Vessel",
       "planet": "Moon",
-      "templates": [
-        "The Vessel is strong today — your ability to hold feeling without being consumed by it is wide open. It's working in your {twinHouse} house. What emotion are you spacious enough to simply hold right now?",
-        "Notice: the Vessel stirs. Emotional spaciousness — not distance, but room. What feeling have you been trying to fix that might just need space?"
+      "questions": [
+        "What emotion are you spacious enough to simply hold right now?",
+        "What feeling have you been trying to fix that might just need room?",
+        "Where does tenderness live in you today without needing to go anywhere?"
       ]
     },
     {
-      "twinName": "The Silence",
       "planet": "Mercury",
-      "templates": [
-        "The Silence is strong today — your capacity for understanding before language is heightened. It's working in your {twinHouse} house. What do you already know that you haven't yet found words for?",
-        "Notice: the Silence stirs. Direct knowing without translation. What would change if you trusted the understanding that arrives before explanation?"
+      "questions": [
+        "What do you already understand that you haven't yet found words for?",
+        "What would shift if you trusted knowing before explaining?",
+        "Where does silence carry more than speech today?"
       ]
     },
     {
-      "twinName": "The Root",
       "planet": "Venus",
-      "templates": [
-        "The Root is strong today — your sense of wholeness alone is present. It's working in your {twinHouse} house. What relationship shifts when you stop needing it to complete you?",
-        "Notice: the Root stirs. Self-sufficiency that makes true relation possible. Where does your own company feel like enough today?"
+      "questions": [
+        "What relationship shifts when you stop needing it to complete you?",
+        "Where does your own company feel like enough today?",
+        "What becomes possible in love when you arrive already whole?"
       ]
     },
     {
-      "twinName": "The Pause",
       "planet": "Mars",
-      "templates": [
-        "The Pause is strong today — your sense for strategic non-action is heightened. It's working in your {twinHouse} house. Where does holding still serve more than pushing forward?",
-        "Notice: the Pause stirs. Not paralysis but precision. What action are you ready for that serves most by waiting?"
+      "questions": [
+        "Where does holding still serve more than pushing forward?",
+        "What action are you ready for that serves most by waiting?",
+        "What would emerge if you met this moment without forcing it?"
       ]
     },
     {
-      "twinName": "The Depth",
       "planet": "Jupiter",
-      "templates": [
-        "The Depth is strong today — your capacity for immersion is calling. It's working in your {twinHouse} house. What one thing are you ready to stay with instead of reaching for everything?",
-        "Notice: the Depth stirs. Staying with the one thing. What would deepen if you stopped expanding?"
+      "questions": [
+        "What one thing are you ready to stay with instead of reaching for everything?",
+        "What would deepen if you stopped expanding?",
+        "Where does immersion call louder than breadth today?"
       ]
     },
     {
-      "twinName": "The Membrane",
       "planet": "Saturn",
-      "templates": [
-        "The Membrane is strong today — your sense for when boundaries should soften is heightened. It's working in your {twinHouse} house, while your {planetHouse} house demands structure. What would change if you let the sensing inform the holding?",
-        "Notice: the Membrane stirs. Boundary that senses, responds, and negotiates. Where does your structure need to breathe today?"
+      "questions": [
+        "Where does your structure need to breathe today?",
+        "What boundary is ready to become a conversation instead of a wall?",
+        "What would soften if you let yourself sense before you held?"
       ]
     },
     {
-      "twinName": "The Drift",
       "planet": "Uranus",
-      "templates": [
-        "The Drift is present — slow mutation from within, almost imperceptible. It's working in your {twinHouse} house. What has been changing in you so gradually that you haven't noticed?",
-        "Notice: the Drift stirs. Change from within, barely visible. What would you see if you compared yourself to five years ago?"
+      "questions": [
+        "What has been changing in you so gradually you haven't noticed?",
+        "What would you see if you compared yourself to five years ago?",
+        "Where is slow change already underway beneath your awareness?"
       ]
     },
     {
-      "twinName": "The Vessel of Form",
       "planet": "Neptune",
-      "templates": [
-        "The Vessel of Form is strong today — your capacity to bring the formless into the concrete is heightened. It's working in your {twinHouse} house. What dream is ready to become something you can touch?",
-        "Notice: the Vessel of Form stirs. Incarnation — the formless fully entering the concrete. What vision is asking for a body today?"
+      "questions": [
+        "What dream is ready to become something you can touch?",
+        "What vision is asking for a body today?",
+        "Where does the formless want to arrive in your hands?"
       ]
     },
     {
-      "twinName": "The Weave",
       "planet": "Pluto",
-      "templates": [
-        "The Weave is present — transformation through integration rather than destruction. It's working in your {twinHouse} house. What are you becoming that doesn't require anything to die first?",
-        "Notice: the Weave stirs. What need not die to become new. Where does change feel like addition rather than loss?"
+      "questions": [
+        "What are you becoming that doesn't require anything to die first?",
+        "Where does change feel like addition rather than loss?",
+        "What is weaving itself together in you, quietly, without permission?"
       ]
     }
   ]

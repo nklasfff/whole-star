@@ -1,22 +1,11 @@
 'use client';
 
-/**
- * Daily page — visualization + invitation.
- *
- * Shows the brightest Twin as a single pulsing field,
- * the daily invitation text, and any active pairs
- * involving the brightest Twin.
- */
-
 import dynamic from 'next/dynamic';
 import { useMemo } from 'react';
 import { useChart } from '@/components/ChartContext';
-import DailyInvitation from '@/components/DailyInvitation';
-import PairDisplay from '@/components/PairDisplay';
-import { generateInvitation } from '@/core/invitation';
+import { generateInvitation, getHouseFelt } from '@/core/invitation';
 import { getTwinDefinition } from '@/core/twins';
 
-// Single-field visualization — dynamic import, no SSR
 const TwinCanvas = dynamic(() => import('@/visual/TwinCanvas'), { ssr: false });
 
 export default function DailyPage() {
@@ -27,76 +16,65 @@ export default function DailyPage() {
     return generateInvitation(chart.brightestTwin);
   }, [chart]);
 
-  // Pairs involving the brightest Twin
-  const relevantPairs = useMemo(() => {
-    if (!chart) return [];
-    const planet = chart.brightestTwin.planet;
-    return chart.activePairs.filter(
-      p => p.twin1 === planet || p.twin2 === planet
-    );
-  }, [chart]);
-
   if (!chart || !invitation) {
     return (
-      <main className="flex flex-1 flex-col items-center justify-center px-6">
-        <p className="text-[var(--muted)] text-sm">
-          Enter your birth data to receive a daily invitation.
+      <main className="fixed inset-0 flex items-center justify-center bg-[var(--background)]">
+        <p className="text-[var(--muted)] text-sm font-light">
+          Enter your birth data to begin.
         </p>
       </main>
     );
   }
 
-  const brightestDef = getTwinDefinition(chart.brightestTwin.planet);
-  const color = brightestDef?.color ?? '#C9A088';
+  const def = getTwinDefinition(chart.brightestTwin.planet);
+  const color = def?.color ?? '#C9A088';
+  const felt = getHouseFelt(chart.brightestTwin.twinHouse);
 
-  // Show only the brightest Twin and its close neighbours for a focused view
-  const focusedTwins = useMemo(() => {
-    const sorted = [...chart.twinStates].sort((a, b) => b.intensity - a.intensity);
-    return sorted.slice(0, 3); // Top 3 for a calm, focused visualization
-  }, [chart]);
+  // Only the brightest twin — nothing else
+  const singleTwin = useMemo(
+    () => [chart.brightestTwin],
+    [chart.brightestTwin]
+  );
 
   return (
-    <main className="flex flex-1 flex-col items-center px-6 py-8">
-      {/* Mini visualization — focused on the brightest Twin */}
-      <section
-        className="w-full max-w-lg mb-6 rounded-2xl overflow-hidden"
-        style={{
-          height: '280px',
-          border: `1px solid ${color}15`,
-        }}
-      >
+    <div className="fixed inset-0 overflow-hidden bg-[var(--background)]">
+      {/* Fullscreen visualization — breathes beneath everything */}
+      <div className="absolute inset-0">
         <TwinCanvas
-          twinStates={focusedTwins}
+          twinStates={singleTwin}
           positions={chart.positions}
+          fieldScale={3}
+          hideChart
         />
-      </section>
+      </div>
 
-      {/* Date */}
-      <p className="text-[10px] uppercase tracking-[0.2em] text-[var(--muted)] mb-6">
-        {new Date().toLocaleDateString('en-GB', {
-          weekday: 'long',
-          day: 'numeric',
-          month: 'long',
-          year: 'numeric',
-        })}
-      </p>
+      {/* Gradient overlays for text legibility */}
+      <div className="absolute inset-x-0 top-0 h-48 bg-gradient-to-b from-[var(--background)] to-transparent opacity-60 pointer-events-none" />
+      <div className="absolute inset-x-0 bottom-0 h-64 bg-gradient-to-t from-[var(--background)] to-transparent opacity-80 pointer-events-none" />
 
-      {/* The invitation */}
-      <DailyInvitation invitation={invitation} />
+      {/* Content layer — name at top, question at bottom */}
+      <div className="relative z-10 flex flex-col h-full px-8">
 
-      {/* Active pairs involving the brightest Twin */}
-      {relevantPairs.length > 0 && (
-        <section className="w-full max-w-lg mt-10">
-          <h3 className="text-[10px] uppercase tracking-[0.2em] text-[var(--muted)] mb-4 text-center">
-            What else stirs alongside
-          </h3>
-          <div className="grid gap-3">
-            {relevantPairs.map(pair => (
-              <PairDisplay key={`${pair.twin1}-${pair.twin2}`} pair={pair} />
-            ))}
-          </div>
-        </section>
-      )}
-    </main>
+        {/* Top: Twin name + where it stirs */}
+        <div className="flex-1 flex flex-col items-center justify-center -mt-16">
+          <h1
+            className="text-5xl sm:text-6xl font-extralight tracking-wide text-center leading-tight"
+            style={{ color }}
+          >
+            {invitation.twinName}
+          </h1>
+          <p className="mt-4 text-sm font-light text-white/40 text-center max-w-xs">
+            {felt}
+          </p>
+        </div>
+
+        {/* Bottom: the single question */}
+        <div className="pb-14 sm:pb-20">
+          <p className="text-base sm:text-lg font-light leading-relaxed text-white/70 text-center max-w-md mx-auto">
+            {invitation.invitationText}
+          </p>
+        </div>
+      </div>
+    </div>
   );
 }
