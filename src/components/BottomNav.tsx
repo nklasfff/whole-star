@@ -9,8 +9,8 @@ export default function BottomNav() {
   const pathname = usePathname();
   const { chart } = useChart();
 
-  // Hidden on welcome screen
-  if (pathname === '/') return null;
+  // Hidden on welcome and onboarding screens
+  if (pathname === '/' || pathname === '/onboarding') return null;
 
   const twinsHref = chart
     ? `/twin/${getBrightestTwinId(chart.twinStates)}`

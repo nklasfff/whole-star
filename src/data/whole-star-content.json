@@ -1,0 +1,256 @@
+{
+  "onboarding": {
+    "screens": [
+      {
+        "id": "screen1",
+        "text": "You know your sign. You know your planets. But there is something your chart has never shown you.",
+        "visualDirection": "Dark background. Text fades in slowly over 3-4 seconds. Subtle pulsing arrow or 'Continue' at bottom."
+      },
+      {
+        "id": "screen2",
+        "text": "Every planet in your chart expresses a force. Action. Structure. Expansion. Feeling. But every force rests on something it cannot name.",
+        "visualDirection": "A faint warm field begins to breathe in the background — almost invisible, like something waking."
+      },
+      {
+        "id": "screen3",
+        "lines": [
+          "Mars acts — but what knows when to be still?",
+          "Saturn builds walls — but what makes a wall breathe?",
+          "Jupiter reaches outward — but what says: go deeper, not wider?"
+        ],
+        "visualDirection": "The field slowly divides into two — one clear, one diffuse. Like something and its warm shadow."
+      },
+      {
+        "id": "screen4",
+        "text": "These unnamed qualities are already in you. They have always been there — working quietly beneath everything. We call them your Twins.",
+        "visualDirection": "The diffuse field becomes clearer. Both pulse side by side — the known and the unknown."
+      },
+      {
+        "id": "screen5",
+        "text": "Your chart shows who you are. Your Twins show what is stirring inside you — what you are already becoming.",
+        "visualDirection": "The two fields merge into one living, warm field that fills the screen."
+      },
+      {
+        "id": "screen6_input",
+        "headerText": "Let us find them.",
+        "fields": [
+          {
+            "prompt": "When were you born?",
+            "type": "date"
+          },
+          {
+            "prompt": "Do you know the time?",
+            "type": "time",
+            "fallbackOption": "Not sure",
+            "fallbackValue": "12:00"
+          },
+          {
+            "prompt": "Where?",
+            "type": "location"
+          }
+        ],
+        "buttonText": "Reveal",
+        "visualDirection": "Field pulls back softly. One field at a time slides in. Button pulses in warm Twin color."
+      },
+      {
+        "id": "screen7_reveal",
+        "visualDirection": "Dark screen. Silence. Then Twin fields begin to materialize one by one in their unique colors, strongest first. Takes 5-8 seconds. No text yet — just Twins emerging. When all visible, the strongest Twin rises to foreground with its name and today's invitation."
+      }
+    ]
+  },
+
+  "twinDepthTexts": {
+    "witness": {
+      "twinName": "The Witness",
+      "planet": "Sun",
+      "subtitle": "Quiet self-recognition",
+      "depthText": "There is a place in you that already knows who you are. Not the version you show the world — not the one that performs, adjusts, and presents. Something quieter. Something that was there before you learned to explain yourself.\n\nMost of the time, this place is drowned out. The Sun in your chart wants to shine, to express, to be seen. And that is real. But the Witness is what remains when the performance stops. It is the self that does not need an audience.\n\nYou have felt it — in those rare moments when you stopped trying. When you caught your own eye in a mirror and for a split second saw someone you recognized but could not describe. That is the Witness. Not self-knowledge as achievement, but self-recognition as rest.\n\nWhen the Witness is active, the question is not \"who should I be today?\" but \"who am I when I stop trying to be anything?\""
+    },
+    "vessel": {
+      "twinName": "The Vessel",
+      "planet": "Moon",
+      "subtitle": "Emotional spaciousness",
+      "depthText": "Your feelings are not the problem. They never were. But somewhere along the way, you may have learned that feeling deeply means being overwhelmed — that emotions are things that happen to you, and your only options are to control them or be swept away.\n\nThe Vessel is a different possibility. It is the space inside you that is larger than any single feeling. Not numb, not detached — spacious. Like a room that does not shrink when someone enters it.\n\nYou have felt this too — moments when a strong emotion arrived and instead of drowning, you found something in you that could hold it. Grief that was enormous but somehow bearable. Joy that did not need to become mania. Anger that could burn without destroying.\n\nWhen the Vessel is active, you do not need to fix what you feel. You do not need to understand it yet. You only need to notice: there is always more room than you think."
+    },
+    "silence": {
+      "twinName": "The Silence",
+      "planet": "Mercury",
+      "subtitle": "Understanding before language",
+      "depthText": "You know things you cannot explain. You always have. A sense of what is right before you can reason why. A recognition that arrives whole, without steps, without logic — and then you spend hours trying to translate it into words that never quite capture it.\n\nMercury in your chart is the translator — the part of you that names, sorts, connects, and communicates. It is brilliant at this. But the Silence is what Mercury translates from. It is the knowing that exists before language touches it.\n\nChildren live here naturally. Artists visit. Lovers know it in the moment before they speak. It is not mystical — it is that direct understanding that does not need to prove itself.\n\nWhen the Silence is active, the invitation is not to think harder but to trust the knowing that is already here — the one that gets quieter the more you try to put it into words."
+    },
+    "root": {
+      "twinName": "The Root",
+      "planet": "Venus",
+      "subtitle": "Wholeness alone",
+      "depthText": "There is a wholeness in you that has nothing to do with anyone else. Not independence as defense. Not solitude as second choice. Something deeper — a ground you stand on that does not shift when someone enters or leaves your life.\n\nVenus in your chart knows how to relate, attract, harmonize. It is the part of you that reaches toward others. And that reaching is beautiful. But the Root is what makes it honest. Without the Root, relating becomes needing. With it, love becomes a choice rather than a hunger.\n\nYou know the difference. You have felt relationships where you disappeared into the other person, and moments — maybe rarer — where you were completely yourself and completely with someone. That second quality is the Root at work.\n\nWhen the Root is active, you are not being asked to withdraw from others. You are being asked to notice: what in you is already whole, right now, exactly as things are?"
+    },
+    "pause": {
+      "twinName": "The Pause",
+      "planet": "Mars",
+      "subtitle": "Strategic stillness",
+      "depthText": "There is a power in you that has nothing to do with doing. Mars in your chart is the warrior, the initiator, the one who acts. And that energy is essential — without it, nothing moves, nothing begins, nothing gets fought for.\n\nBut the Pause is the intelligence that Mars does not have alone. It is the part of you that feels the full force of an impulse — and waits. Not out of weakness. Not out of fear. Out of a precise knowing that this is not yet the moment.\n\nAthletes know this. So do hunters, negotiators, and anyone who has ever held their tongue at exactly the right time. The Pause is not hesitation. It is power that has chosen not to discharge.\n\nWhen the Pause is active, you may feel restless. The energy is there. The impulse is there. Everything in you wants to move. And the invitation is: what if your greatest strength today is the choice to hold still?"
+    },
+    "depth": {
+      "twinName": "The Depth",
+      "planet": "Jupiter",
+      "subtitle": "Immersion",
+      "depthText": "Jupiter wants more. More meaning, more horizon, more understanding. It is the part of you that looks up, looks out, looks beyond. And this capacity for expansion is genuinely magnificent.\n\nBut the Depth is its quiet counterpart — the capacity to stop reaching and start arriving. To take one thing, just one, and be completely with it. Not skimming, not connecting it to everything else, not already looking for the next insight — but entering it fully and staying.\n\nYou know the difference between reading about something and truly understanding it. Between visiting a place and knowing it. Between hearing someone and actually listening. That difference is the Depth.\n\nWhen the Depth is active, you may notice a restlessness — a pull toward the new, the next, the more. And the invitation is to recognize that pull as Jupiter talking, and to ask: what is already here that I have not fully met?"
+    },
+    "membrane": {
+      "twinName": "The Membrane",
+      "planet": "Saturn",
+      "subtitle": "The living boundary",
+      "depthText": "Saturn builds walls. It has to. Without structure, without boundaries, without the willingness to say no, everything collapses. Saturn is the part of you that knows this and acts on it — sometimes rigidly, sometimes wisely, sometimes both.\n\nBut the Membrane is something Saturn alone cannot achieve. It is the boundary that is alive — that senses what is on the other side, that knows when to be firm and when to be permeable. Not a wall but a skin. Not rigid but responsive.\n\nThink of every time you held a boundary that turned out to be a prison. And every time you let something in that you should have kept out. The Membrane is the intelligence that knows the difference — not as a rule but as a felt sense, moment by moment.\n\nWhen the Membrane is active, your edges are awake. Something in you is sensing, negotiating, deciding what to let through and what to hold. The invitation is to trust that sensing — it is older and wiser than your rules about what should and should not be allowed in."
+    },
+    "drift": {
+      "twinName": "The Drift",
+      "planet": "Uranus",
+      "subtitle": "Slow mutation",
+      "depthText": "Uranus changes things suddenly. It breaks, disrupts, revolutionizes. And sometimes that is exactly what is needed — the lightning bolt that clears the old.\n\nBut the Drift is the other kind of change. The one that has no moment. The one that happens so slowly you cannot see it while it is happening — only afterward, when you look back and realize you are no longer who you were.\n\nYou have experienced this. The belief you held fiercely at twenty that quietly dissolved by thirty — not through crisis but through living. The relationship that did not end in a fight but in a gradual, mutual outgrowing. The identity that shifted not because something broke but because something new grew in around it.\n\nWhen the Drift is active, something in you is in the middle of one of these slow transformations. You may not be able to name it yet. The invitation is not to force clarity but to let the change continue at its own pace — and to trust that you will understand it when it is ready to be understood."
+    },
+    "vesselOfForm": {
+      "twinName": "The Vessel of Form",
+      "planet": "Neptune",
+      "subtitle": "Incarnation",
+      "depthText": "Neptune dissolves. It dreams, intuits, transcends. It is the part of you that senses what could be — the vision, the longing, the beautiful possibility that has no shape yet.\n\nThe Vessel of Form is what brings the dream down to earth. Not by reducing it but by giving it a body. A word written on a page. A conversation finally had. A first step taken, however imperfect.\n\nMost visions die not because they were wrong but because no one gave them form. They remain forever beautiful and forever unreal — floating in potential, never touching the ground. The Vessel of Form is the courage to let a perfect dream become an imperfect reality.\n\nWhen the Vessel of Form is active, something in you that has been imagined is ready to become real. It will not look the way you pictured it — it never does. The invitation is to begin anyway, knowing that the world does not need your dream to be perfect. It needs it to exist."
+    },
+    "weave": {
+      "twinName": "The Weave",
+      "planet": "Pluto",
+      "subtitle": "Transformation through integration",
+      "depthText": "Pluto transforms through destruction. It burns the old to make way for the new. And sometimes that fire is necessary — there are structures in a life that must come down before something truer can stand.\n\nBut the Weave is the other path. It is transformation that does not require destruction — that finds a way to let the new grow into the existing, changing it from within rather than replacing it. Not revolution but evolution. Not death and rebirth but a slow, continuous becoming.\n\nYou know this kind of change. The friendship that survived a fundamental disagreement and became deeper for it. The sense of self that expanded to include something once foreign without losing what was already there. Integration rather than amputation.\n\nWhen the Weave is active, something new is entering your life. The old pattern wants to reject it or be destroyed by it. The Weave offers a third possibility: what if both can be here? What if nothing needs to die for you to grow?"
+    }
+  },
+
+  "invitations": {
+    "witness": {
+      "twinName": "The Witness",
+      "planet": "Sun",
+      "invitations": [
+        "You already know who you are today. What happens if you stop trying to show it?",
+        "There is a version of you that does not need to perform. What does it feel like to let that one lead?",
+        "What would remain of you if you expressed nothing at all today?",
+        "You do not need to become anything right now. What is it like to simply recognize what is already here?",
+        "If no one were watching — not even you — who would you be today?",
+        "Somewhere beneath the effort, you already know. What does that knowing feel like in your body?"
+      ]
+    },
+    "vessel": {
+      "twinName": "The Vessel",
+      "planet": "Moon",
+      "invitations": [
+        "A feeling is here. What happens if you hold it without trying to change it?",
+        "You do not need to understand what you feel right now. Can you let it be here anyway?",
+        "What would it be like to give this emotion more room — not more attention, just more room?",
+        "There is a space inside you that is larger than any single feeling. Can you sense it today?",
+        "What if the feeling does not need to be solved? What if it just needs to be held?",
+        "Notice what you feel without naming it. What happens when you stay with it a few breaths longer?"
+      ]
+    },
+    "silence": {
+      "twinName": "The Silence",
+      "planet": "Mercury",
+      "invitations": [
+        "You understand something today that you cannot explain. What happens if you trust it without words?",
+        "Before the thought finishes forming — there. What did you know in that instant?",
+        "Not everything needs to be articulated. What do you understand right now that language would only reduce?",
+        "There is a knowing in you that arrives before thinking. What is it pointing toward today?",
+        "What would you do differently today if you trusted what you sense before you can name it?",
+        "The clearest understanding often has no words. What is yours saying without speaking?"
+      ]
+    },
+    "root": {
+      "twinName": "The Root",
+      "planet": "Venus",
+      "invitations": [
+        "You are not missing anything right now. What does it feel like to let that be true?",
+        "What would your day look like if you were not waiting for anyone to complete it?",
+        "There is a wholeness in you that has nothing to do with another person. Can you feel where it lives?",
+        "What if being alone today is not an absence but a presence? What becomes possible?",
+        "The need to be seen is quiet today. What do you notice when it stops speaking?",
+        "You are already whole. What would you choose differently if you truly believed that right now?"
+      ]
+    },
+    "pause": {
+      "twinName": "The Pause",
+      "planet": "Mars",
+      "invitations": [
+        "You know what to do. What happens if you wait one more moment before doing it?",
+        "Your strength is not only in what you do. What is your stillness protecting today?",
+        "What would change if the most powerful thing you did today was nothing?",
+        "There is a force in you that is gathering, not acting. What is it waiting for?",
+        "Not every impulse needs a response. Which one is asking you to hold still today?",
+        "The right moment has its own timing. What happens if you let it arrive instead of chasing it?"
+      ]
+    },
+    "depth": {
+      "twinName": "The Depth",
+      "planet": "Jupiter",
+      "invitations": [
+        "What would deepen if you stopped expanding?",
+        "You are reaching for many things. What happens if you set all of them down except one?",
+        "Somewhere there is one thing asking for your full attention. Can you hear which one it is?",
+        "Breadth is easy today. Depth is what is calling. What would you give your undivided presence to?",
+        "What have you been circling around without entering? What happens if you go in?",
+        "The richest thing available to you today is not new. It is something you already know but have not yet fully met."
+      ]
+    },
+    "membrane": {
+      "twinName": "The Membrane",
+      "planet": "Saturn",
+      "invitations": [
+        "A boundary in you is alive today — not rigid, not absent, but sensing. What is it telling you?",
+        "What would it feel like to let one thing in that you have been holding at a distance?",
+        "Your edges are intelligent. What are they responding to right now?",
+        "There is a difference between protecting yourself and closing yourself. Which one are you doing today?",
+        "Something is asking for permission to enter. Something else is asking you to say no. Can you feel both?",
+        "What would change if your boundaries could breathe — firm when needed, soft when safe?"
+      ]
+    },
+    "drift": {
+      "twinName": "The Drift",
+      "planet": "Uranus",
+      "invitations": [
+        "Something in you has been shifting for a long time. Can you feel what it is becoming?",
+        "You are not the same person you were a year ago, but the change had no single moment. What changed?",
+        "What is quietly becoming true about you that you have not yet acknowledged?",
+        "The deepest changes have no announcement. What has already changed without your permission?",
+        "There is a slow becoming happening beneath your daily life. What does it need from you today?",
+        "You do not need a breakthrough. What is already breaking through on its own?"
+      ]
+    },
+    "vesselOfForm": {
+      "twinName": "The Vessel of Form",
+      "planet": "Neptune",
+      "invitations": [
+        "A dream is asking to become real today. What is the smallest step that would give it a body?",
+        "What vision have you been carrying that is ready to land? What would it look like if it touched the ground?",
+        "The beautiful and the concrete are not enemies. What would it feel like to bring them together today?",
+        "Something formless in you wants to become something you can touch. What is it?",
+        "What would happen if you stopped imagining and started making — even imperfectly?",
+        "The world does not need your dream to be perfect. It needs it to exist. What is one way to begin?"
+      ]
+    },
+    "weave": {
+      "twinName": "The Weave",
+      "planet": "Pluto",
+      "invitations": [
+        "Something new is entering your life. What if nothing needs to be destroyed to make room for it?",
+        "You can change without losing what matters. What would that kind of transformation feel like?",
+        "What if growth today is not about letting go but about letting in?",
+        "There is something old in you and something new, and they are not enemies. What happens if they meet?",
+        "You do not need to burn it down. What would it look like to weave the new into the existing?",
+        "The most profound change is the one that leaves you more whole, not less. What is asking to be integrated today?"
+      ]
+    }
+  },
+
+  "houseDescriptions": {
+    "1-7": "this stirs in how you meet the world and how you meet others",
+    "2-8": "this lives in what you hold as yours and what you share at depth",
+    "3-9": "this moves between your daily conversations and your larger understanding",
+    "4-10": "this works between your most private space and your public life",
+    "5-11": "this plays between what you create and what you contribute to the larger whole",
+    "6-12": "this lives between your daily rhythms and what you surrender to"
+  }
+}

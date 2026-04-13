@@ -1,18 +1,11 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond, Inter } from "next/font/google";
+import { Cormorant_Garamond } from "next/font/google";
 import "./globals.css";
 import { ChartProvider } from "@/components/ChartContext";
 import BottomNav from "@/components/BottomNav";
 
 const serif = Cormorant_Garamond({
   variable: "--font-serif",
-  subsets: ["latin"],
-  weight: ["300", "400"],
-  display: "swap",
-});
-
-const sans = Inter({
-  variable: "--font-sans",
   subsets: ["latin"],
   weight: ["300", "400"],
   display: "swap",
@@ -29,8 +22,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${serif.variable} ${sans.variable} h-full antialiased`}>
-      <body className="min-h-full flex flex-col bg-[var(--background)] text-[var(--foreground)] font-sans">
+    <html lang="en" className={`${serif.variable} h-full antialiased`}>
+      <body className="min-h-full flex flex-col bg-[var(--background)] text-[var(--foreground)]"
+        style={{ fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif' }}
+      >
         <ChartProvider>
           {children}
           <BottomNav />

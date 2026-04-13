@@ -9,9 +9,16 @@ import { getTwinDefinition } from '@/core/twins';
 import { getHouseFelt, generateInvitation } from '@/core/invitation';
 import { findTwinByTwinId, planetToTwinId } from '@/lib/twinId';
 import PairCardSmall from '@/components/PairCardSmall';
-import type { TwinDefinition } from '@/core/types';
+import contentData from '@/data/whole-star-content.json';
 
 const TwinCanvas = dynamic(() => import('@/visual/TwinCanvas'), { ssr: false });
+
+const depthTexts = contentData.twinDepthTexts as Record<string, {
+  twinName: string;
+  planet: string;
+  subtitle: string;
+  depthText: string;
+}>;
 
 export default function TwinDetailPage() {
   const router = useRouter();
@@ -24,7 +31,6 @@ export default function TwinDetailPage() {
     if (hydrated && !chart) router.replace('/');
   }, [hydrated, chart, router]);
 
-  // All twins sorted by intensity
   const sortedTwins = useMemo(() => {
     if (!chart) return [];
     return [...chart.twinStates].sort((a, b) => b.intensity - a.intensity);
@@ -36,8 +42,8 @@ export default function TwinDetailPage() {
   const color = def?.color ?? '#C9A088';
   const felt = currentTwin ? getHouseFelt(currentTwin.twinHouse) : '';
   const invitation = currentTwin ? generateInvitation(currentTwin) : undefined;
+  const depth = depthTexts[id];
 
-  // Active pairs involving this twin
   const relevantPairs = useMemo(() => {
     if (!chart || !currentTwin) return [];
     return chart.activePairs.filter(
@@ -70,6 +76,7 @@ export default function TwinDetailPage() {
   }
 
   const singleTwin = [currentTwin];
+  const paragraphs = depth?.depthText.split('\n\n') ?? [];
 
   return (
     <div
@@ -99,21 +106,43 @@ export default function TwinDetailPage() {
       {/* Twin info */}
       <section className="px-6 -mt-4 relative z-10">
         <h1
-          className="text-4xl font-serif font-light tracking-wide mb-3"
+          className="text-4xl font-serif font-light tracking-wide mb-1"
           style={{ color }}
         >
           {currentTwin.twinName}
         </h1>
 
-        <p className="text-sm font-serif font-light italic text-white/40 leading-relaxed mb-2 max-w-md">
-          {def.twinQuality}
-        </p>
+        {/* Subtitle from depth content */}
+        {depth?.subtitle && (
+          <p className="text-sm font-serif font-light text-white/35 mb-4 tracking-wide">
+            {depth.subtitle}
+          </p>
+        )}
 
-        <p className="text-xs font-sans text-white/25 mb-6">
+        {/* House felt */}
+        <p className="text-xs font-sans text-white/20 mb-6">
           {felt}
         </p>
 
-        {/* Today's invitation for this twin */}
+        {/* Depth text — the primary content, beautifully formatted */}
+        {paragraphs.length > 0 && (
+          <div className="mb-8 space-y-4 max-w-lg">
+            {paragraphs.map((para, i) => (
+              <p
+                key={i}
+                className="text-sm font-serif font-light leading-[1.9] text-white/55"
+                style={{
+                  // First paragraph slightly more visible
+                  opacity: i === 0 ? 1 : undefined,
+                }}
+              >
+                {para}
+              </p>
+            ))}
+          </div>
+        )}
+
+        {/* Today's invitation */}
         {invitation && (
           <div
             className="rounded-2xl p-6 mb-6"
@@ -122,15 +151,18 @@ export default function TwinDetailPage() {
               border: `1px solid ${color}15`,
             }}
           >
-            <p className="text-sm font-serif font-light leading-[1.8] text-white/60">
+            <p className="text-[10px] font-sans uppercase tracking-[0.2em] text-white/20 mb-3">
+              Today
+            </p>
+            <p className="text-base font-serif font-light leading-[1.8] text-white/60">
               {invitation.invitationText}
             </p>
           </div>
         )}
 
-        {/* Active pairs involving this twin */}
+        {/* Active pairs */}
         {relevantPairs.length > 0 && (
-          <div>
+          <div className="mb-6">
             <p className="text-[10px] font-sans uppercase tracking-[0.2em] text-[var(--muted)] mb-3">
               Resonates with
             </p>
